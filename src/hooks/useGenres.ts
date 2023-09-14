@@ -2,8 +2,7 @@
 import axios from "axios";
 import genres from "../data/genres";
 import { useQuery } from "@tanstack/react-query";
-import apiClient from "../services/api-client";
-import { FetchResponse } from "./useData";
+import apiClient, { FetchResponse } from "../services/api-client";
 
 export interface Genre {
   id: number;

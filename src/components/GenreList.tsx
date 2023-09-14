@@ -8,8 +8,6 @@ import {
   Spinner,
   Text,
 } from "@chakra-ui/react";
-import React from "react";
-import useData from "../hooks/useData";
 import useGenres, { Genre } from "../hooks/useGenres";
 import getCroppedImageUrl from "../services/image-url";
 
