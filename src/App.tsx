@@ -26,7 +26,6 @@ function App() {
           <GenreList />
         </GridItem>
       </Show>
-
       <GridItem area="main">
         <Box paddingLeft={2}>
           <GameHeading />
@@ -34,11 +33,9 @@ function App() {
             <Box marginRight={5}>
               <PlatformSelector />
             </Box>
-
             <SortSelector />
           </Flex>
         </Box>
-
         <GameGrid />
       </GridItem>
     </Grid>
