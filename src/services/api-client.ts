@@ -30,6 +30,12 @@ class APIClient<T> {
       .then((res) => res.data);
   };
 
+  get = (id: number | string) => {
+    return axiosInstance
+      .get<T>(this.endpoint + "/" + id)
+      .then((res) => res.data);
+  };
+
   post = (data: T) => {
     axiosInstance.post<T>(this.endpoint, data).then((res) => res.data);
   };
